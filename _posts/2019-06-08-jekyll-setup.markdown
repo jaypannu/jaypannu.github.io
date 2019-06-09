@@ -5,6 +5,8 @@ date:   2019-06-09 01:25:21 +0530
 categories: python terminal ubuntu
 ---
 
+Maybe better to follow github guide on setting github pages with jekyll. It may change in future. 
+
 Install ruby - snap is latest as compared to apt but may not be safe
 
 ```

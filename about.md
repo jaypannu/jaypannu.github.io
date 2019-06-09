@@ -5,6 +5,16 @@ permalink: /about/
 ---
 
 
+<style type="text/css">
+  .right{
+       text-align: right;
+  }
+</style>
+
+![The Blue Dot](bluedot.jpg){: ".right"}
+
+<p style="text-align: left">
+
 I met a traveler from an antique land
 
 
@@ -45,3 +55,9 @@ Of that colossal wreck, boundless and bare
 
 
 The lone and level sands stretch far away
+
+```
+by Percy Bysshe Shelley
+```
+
+</p>
