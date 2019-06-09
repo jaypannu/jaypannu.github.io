@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "Git"
+date:   2019-06-09 01:25:21 +0530
+categories: git terminal ubuntu
+---
+
+
+
+Most likely git is already on ubuntu but if it is not then run the following:
+
+```
+sudo apt-get install git
+```
+
+Config:
+```
+git config --global user.name "jaypannu"
+git config --global user.email "xx@gmail.com"
+```
+
+Create a repository:
+```
+git init Mytest
+```
+
+Add a file
+```
+git add filename
+git add .
+```
+
+commit the changes
+```
+git commit -m "message"
+```
+
+pushing changes to web:
+```
+git remote add origin https://github.com/user_name/Mytest.git
+git push origin master
+```
+
+It is much easier to create repo on web and clone it:
+
+cloning a repository to local:
+```
+git clone https://github.com/user_name/reponamme
+```
+
+Once config is done then no need to add origin
+```
+git add .
+git commit -m "message"
+git push origin master
+```

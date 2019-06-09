@@ -1,1 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-09T01:39:23+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">docs</title><entry><title type="html">test</title><link href="http://localhost:4000/update/2019/06/09/test.html" rel="alternate" type="text/html" title="test" /><published>2019-06-09T01:25:21+05:30</published><updated>2019-06-09T01:25:21+05:30</updated><id>http://localhost:4000/update/2019/06/09/test</id><content type="html" xml:base="http://localhost:4000/update/2019/06/09/test.html"></content><author><name></name></author><summary type="html"></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-09T10:33:51+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">docs</title><entry><title type="html">Git</title><link href="http://localhost:4000/git/terminal/2019/06/09/git.html" rel="alternate" type="text/html" title="Git" /><published>2019-06-09T01:25:21+05:30</published><updated>2019-06-09T01:25:21+05:30</updated><id>http://localhost:4000/git/terminal/2019/06/09/git</id><content type="html" xml:base="http://localhost:4000/git/terminal/2019/06/09/git.html">&lt;p&gt;Most likely git is already on ubuntu but if it is not then run the following:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Config:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global user.name &quot;jaypannu&quot;
+git config --global user.email &quot;xx@gmail.com&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Create a repository:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init Mytest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Add a file&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add filename
+git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;commit the changes&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;message&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;pushing changes to web:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin https://github.com/user_name/Mytest.git
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It is much easier to create repo on web and clone it:&lt;/p&gt;
+
+&lt;p&gt;cloning a repository to local:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/user_name/reponamme
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once config is done then no need to add origin&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
+git commit -m &quot;message&quot;
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Most likely git is already on ubuntu but if it is not then run the following:</summary></entry></feed>
