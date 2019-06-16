@@ -48,9 +48,7 @@ Nothing beside remains. Round the decay
 
 Of that colossal wreck, boundless and bare
 
-
 The lone and level sands stretch far away
 
-```
-by Percy Bysshe Shelley
-```
+
+_by Percy Bysshe Shelley_
