@@ -4,5 +4,3 @@
 
 layout: home
 ---
-
-Just bunch of codes that I find myself using repeatedly.

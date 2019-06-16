@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git"
-date:   2019-06-09 01:25:21 +0530
+date:   2019-04-12 01:25:21 +0530
 categories: git terminal ubuntu
 ---
 
@@ -15,7 +15,7 @@ sudo apt-get install git
 
 Config:
 ```
-git config --global user.name "jaypannu"
+git config --global user.name "xx"
 git config --global user.email "xx@gmail.com"
 ```
 
@@ -30,12 +30,12 @@ git add filename
 git add .
 ```
 
-commit the changes
+Commit the changes
 ```
 git commit -m "message"
 ```
 
-pushing changes to web:
+Pushing changes to web:
 ```
 git remote add origin https://github.com/user_name/Mytest.git
 git push origin master
@@ -43,7 +43,7 @@ git push origin master
 
 It is much easier to create repo on web and clone it:
 
-cloning a repository to local:
+Cloning a repository to local:
 ```
 git clone https://github.com/user_name/reponamme
 ```

@@ -5,15 +5,10 @@ permalink: /about/
 ---
 
 
-<style type="text/css">
-  .right{
-       text-align: right;
-  }
-</style>
 
-![The Blue Dot](bluedot.jpg){: ".right"}
+{% include image.html url="realocean.jpg" description="Credit: NASA/JPL" %}
 
-<p style="text-align: left">
+
 
 I met a traveler from an antique land
 
@@ -59,5 +54,3 @@ The lone and level sands stretch far away
 ```
 by Percy Bysshe Shelley
 ```
-
-</p>

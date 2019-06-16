@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Jekyll github-pages setup"
-date:   2019-06-09 01:25:21 +0530
+title:  Jekyll
+date:   2019-04-12 01:25:21 +0530
 categories: python terminal ubuntu
 ---
 
-Maybe better to follow github guide on setting github pages with jekyll. It may change in future. 
+It may be better to follow github guide on setting github pages with Jekyll. It may change in future and following code may not be up to date.
 
-Install ruby - snap is latest as compared to apt but may not be safe
+Install ruby using snap since it is latest there as compared to apt. However it may not be safe.
 
 ```
 sudo snap install ruby --classic
@@ -19,21 +19,23 @@ Install the bundler gem
 gem install bundler
 ```
 
-Create a gem file with following code
+Create a `Gemfile` with following code
+
 ```
 source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
 ```
 
 Run following to install all depenedecies as per Gemfile:
+
 ```
 bundle install
 ```
 
-This is failing on ubuntu 19.04, as of Jun 20189. As per solution pasted here:
+This is not working on ubuntu 19.04, as of Jun 2019. As per solution pasted here:
 
 
-https://github.com/eventmachine/eventmachine/issues/881
+[https://github.com/eventmachine/eventmachine/issues/881](https://github.com/eventmachine/eventmachine/issues/881)
 
 
 We try to install ruby with RVM (ruby version manager)
@@ -44,7 +46,7 @@ sudo apt install gnupg2
 sudo apt install curl
 ```
 
-Get key from here: https://rvm.io/
+Get key from here: [https://rvm.io/](https://rvm.io/])
 
 Install ruby + rails, feels like overkill to just build one static site (?)
 
