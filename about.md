@@ -10,19 +10,16 @@ permalink: /about/
 
 
 
-I met a traveler from an antique land
+I met a traveler from an antique land.
 
 
-Who said: Two vast and trunkless legs of stone
+Who said: Two vast and trunkless legs of stone Stand in the desert..
 
 
-Stand in the desert. Near them, on the sand,
+Near them, on the sand, Half sunk, a shattered visage lies,
 
 
-Half sunk, a shattered visage lies, whose frown,
-
-
-And wrinkled lip, and sneer of cold command,
+whose frown, And wrinkled lip, and sneer of cold command,
 
 
 Tell that its sculptor well those passions read
@@ -47,6 +44,7 @@ Nothing beside remains. Round the decay
 
 
 Of that colossal wreck, boundless and bare
+
 
 The lone and level sands stretch far away
 
