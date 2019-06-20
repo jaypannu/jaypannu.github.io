@@ -1,4 +1,205 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-20T07:11:55+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Docs</title><author><name>jaypannu</name></author><entry><title type="html">Python setup</title><link href="http://localhost:4000/terminal/2019/06/10/python-setup/" rel="alternate" type="text/html" title="Python setup" /><published>2019-06-10T01:25:21+05:30</published><updated>2019-06-10T01:25:21+05:30</updated><id>http://localhost:4000/terminal/2019/06/10/python-setup</id><content type="html" xml:base="http://localhost:4000/terminal/2019/06/10/python-setup/">&lt;p&gt;python3 should be on ubuntu by default, install pip&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-20T10:07:45+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Docs</title><author><name>jaypannu</name></author><entry><title type="html">Ipython</title><link href="http://localhost:4000/2019/06/20/ipython/" rel="alternate" type="text/html" title="Ipython" /><published>2019-06-20T00:00:00+05:30</published><updated>2019-06-20T00:00:00+05:30</updated><id>http://localhost:4000/2019/06/20/ipython</id><content type="html" xml:base="http://localhost:4000/2019/06/20/ipython/">&lt;h2 id=&quot;shortcut-and-tips-for-ipython&quot;&gt;Shortcut and tips for Ipython&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# and len? would return docstring of the function len&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Help on built-in function len in module builtins:
+
+len(obj, /)
+    Return the number of items in a container.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#  Both of these notations can be applied on objects as well.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;L&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Help on list object:
+
+class list(object)
+ |  list(iterable=(), /)
+ |  
+ |  Built-in mutable sequence.
+ |  
+ |  If no argument is given, the constructor creates a new empty list.
+ |  The argument must be an iterable if specified.
+ |  
+ |  Methods defined here:
+ |  
+ |  __add__(self, value, /)
+ |      Return self+value.
+ |  
+ |  __contains__(self, key, /)
+ |      Return key in self.
+ |  
+ |  __delitem__(self, key, /)
+ |      Delete self[key].
+ |  
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |  
+ |  __ge__(self, value, /)
+ |      Return self&amp;gt;=value.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __getitem__(...)
+ |      x.__getitem__(y) &amp;lt;==&amp;gt; x[y]
+ |  
+ |  __gt__(self, value, /)
+ |      Return self&amp;gt;value.
+ |  
+ |  __iadd__(self, value, /)
+ |      Implement self+=value.
+ |  
+ |  __imul__(self, value, /)
+ |      Implement self*=value.
+ |  
+ |  __init__(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |  
+ |  __le__(self, value, /)
+ |      Return self&amp;lt;=value.
+ |  
+ |  __len__(self, /)
+ |      Return len(self).
+ |  
+ |  __lt__(self, value, /)
+ |      Return self&amp;lt;value.
+ |  
+ |  __mul__(self, value, /)
+ |      Return self*value.
+ |  
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __reversed__(self, /)
+ |      Return a reverse iterator over the list.
+ |  
+ |  __rmul__(self, value, /)
+ |      Return value*self.
+ |  
+ |  __setitem__(self, key, value, /)
+ |      Set self[key] to value.
+ |  
+ |  __sizeof__(self, /)
+ |      Return the size of the list in memory, in bytes.
+ |  
+ |  append(self, object, /)
+ |      Append object to the end of the list.
+ |  
+ |  clear(self, /)
+ |      Remove all items from list.
+ |  
+ |  copy(self, /)
+ |      Return a shallow copy of the list.
+ |  
+ |  count(self, value, /)
+ |      Return number of occurrences of value.
+ |  
+ |  extend(self, iterable, /)
+ |      Extend list by appending elements from the iterable.
+ |  
+ |  index(self, value, start=0, stop=9223372036854775807, /)
+ |      Return first index of value.
+ |      
+ |      Raises ValueError if the value is not present.
+ |  
+ |  insert(self, index, object, /)
+ |      Insert object before index.
+ |  
+ |  pop(self, index=-1, /)
+ |      Remove and return item at index (default last).
+ |      
+ |      Raises IndexError if list is empty or index is out of range.
+ |  
+ |  remove(self, value, /)
+ |      Remove first occurrence of value.
+ |      
+ |      Raises ValueError if the value is not present.
+ |  
+ |  reverse(self, /)
+ |      Reverse *IN PLACE*.
+ |  
+ |  sort(self, /, *, key=None, reverse=False)
+ |      Stable sort *IN PLACE*.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  __hash__ = None
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;?? would also give the code if possible, that is written in python&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot; test doc string&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;??&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;TAB to auto complete. It basically pulls results of dir while hiding private methods or arguments. Private by convetion in python are represented by underscore.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# wild card can be used while searching.&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;?&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;shortcuts&lt;/th&gt;
+      &lt;th&gt;actions&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ctrl a&lt;/td&gt;
+      &lt;td&gt;move to the begining of line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ctrl e&lt;/td&gt;
+      &lt;td&gt;move to end of the line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ctrl k&lt;/td&gt;
+      &lt;td&gt;cut till the end of line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ctrl u&lt;/td&gt;
+      &lt;td&gt;cut from the begining of line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ctrl I&lt;/td&gt;
+      &lt;td&gt;clear terminal&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ctrl d&lt;/td&gt;
+      &lt;td&gt;exit&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Ipython shortcuts&lt;/p&gt;
+
+&lt;p&gt;% line magic&lt;/p&gt;
+
+&lt;p&gt;%% cell magic&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>jaypannu</name></author><summary type="html">Shortcut and tips for Ipython help(len) # and len? would return docstring of the function len Help on built-in function len in module builtins: len(obj, /) Return the number of items in a container. # Both of these notations can be applied on objects as well. L = [1,2,3] help(L) Help on list object: class list(object) | list(iterable=(), /) | | Built-in mutable sequence. | | If no argument is given, the constructor creates a new empty list. | The argument must be an iterable if specified. | | Methods defined here: | | __add__(self, value, /) | Return self+value. | | __contains__(self, key, /) | Return key in self. | | __delitem__(self, key, /) | Delete self[key]. | | __eq__(self, value, /) | Return self==value. | | __ge__(self, value, /) | Return self&amp;gt;=value. | | __getattribute__(self, name, /) | Return getattr(self, name). | | __getitem__(...) | x.__getitem__(y) &amp;lt;==&amp;gt; x[y] | | __gt__(self, value, /) | Return self&amp;gt;value. | | __iadd__(self, value, /) | Implement self+=value. | | __imul__(self, value, /) | Implement self*=value. | | __init__(self, /, *args, **kwargs) | Initialize self. See help(type(self)) for accurate signature. | | __iter__(self, /) | Implement iter(self). | | __le__(self, value, /) | Return self&amp;lt;=value. | | __len__(self, /) | Return len(self). | | __lt__(self, value, /) | Return self&amp;lt;value. | | __mul__(self, value, /) | Return self*value. | | __ne__(self, value, /) | Return self!=value. | | __repr__(self, /) | Return repr(self). | | __reversed__(self, /) | Return a reverse iterator over the list. | | __rmul__(self, value, /) | Return value*self. | | __setitem__(self, key, value, /) | Set self[key] to value. | | __sizeof__(self, /) | Return the size of the list in memory, in bytes. | | append(self, object, /) | Append object to the end of the list. | | clear(self, /) | Remove all items from list. | | copy(self, /) | Return a shallow copy of the list. | | count(self, value, /) | Return number of occurrences of value. | | extend(self, iterable, /) | Extend list by appending elements from the iterable. | | index(self, value, start=0, stop=9223372036854775807, /) | Return first index of value. | | Raises ValueError if the value is not present. | | insert(self, index, object, /) | Insert object before index. | | pop(self, index=-1, /) | Remove and return item at index (default last). | | Raises IndexError if list is empty or index is out of range. | | remove(self, value, /) | Remove first occurrence of value. | | Raises ValueError if the value is not present. | | reverse(self, /) | Reverse *IN PLACE*. | | sort(self, /, *, key=None, reverse=False) | Stable sort *IN PLACE*. | | ---------------------------------------------------------------------- | Static methods defined here: | | __new__(*args, **kwargs) from builtins.type | Create and return a new object. See help(type) for accurate signature. | | ---------------------------------------------------------------------- | Data and other attributes defined here: | | __hash__ = None ?? would also give the code if possible, that is written in python def func(): &quot; test doc string&quot; pass func?? TAB to auto complete. It basically pulls results of dir while hiding private methods or arguments. Private by convetion in python are represented by underscore. # wild card can be used while searching. str.*find*? shortcuts actions ctrl a move to the begining of line ctrl e move to end of the line ctrl k cut till the end of line ctrl u cut from the begining of line ctrl I clear terminal ctrl d exit Ipython shortcuts % line magic %% cell magic</summary></entry><entry><title type="html">Python setup</title><link href="http://localhost:4000/terminal/2019/06/10/python-setup/" rel="alternate" type="text/html" title="Python setup" /><published>2019-06-10T01:25:21+05:30</published><updated>2019-06-10T01:25:21+05:30</updated><id>http://localhost:4000/terminal/2019/06/10/python-setup</id><content type="html" xml:base="http://localhost:4000/terminal/2019/06/10/python-setup/">&lt;p&gt;python3 should be on ubuntu by default, install pip&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install -y python3-pip
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
