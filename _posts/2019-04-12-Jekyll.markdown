@@ -2,7 +2,8 @@
 layout: post
 title:  Jekyll
 date:   2019-04-12 01:25:21 +0530
-categories: python terminal ubuntu
+categories: terminal
+tags: [jekyll, ruby]
 ---
 
 It may be better to follow github guide on setting github pages with Jekyll. It may change in future and following code may not be up to date.

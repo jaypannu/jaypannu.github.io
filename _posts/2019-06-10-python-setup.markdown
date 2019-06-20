@@ -2,7 +2,8 @@
 layout: post
 title:  "Python setup"
 date:   2019-06-10 01:25:21 +0530
-categories: python terminal ubuntu
+categories: terminal
+tags: [python, venv, conda]
 ---
 
 
