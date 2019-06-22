@@ -11,7 +11,7 @@
 
   <title>
     
-      Docs &middot; Live & Learn
+       &middot; Live & Learn
     
   </title>
 
@@ -81,29 +81,26 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
 
       
 
-      <span class="foldable">
-        <a class="sidebar-nav-item " href="/blog/">
-          Blog
+      <span class="">
+        <a class="sidebar-nav-item " href="/blog/categories/">
+          Categories
         </a>
 
         
-          
-            
-            
-            
-              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/categories/">
-                Categories
-              </a>
-          
-        
-          
-            
-            
-            
-              <a class="sidebar-nav-item sidebar-nav-item-sub " href="/blog/tags/">
-                Tags
-              </a>
-          
+      </span>
+
+    
+      
+      
+      
+
+      
+
+      <span class="">
+        <a class="sidebar-nav-item " href="/blog/tags/">
+          Tags
+        </a>
+
         
       </span>
 
@@ -148,18 +145,692 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home" title="Docs">
+            <a href="/" title="Home" title="Live & Learn">
               <img class="masthead-logo" src="/public/favicon.png"/>
+              <small style="color:#846978;";>Live & Learn</small>
             </a>
-            <small style="color:#846978;";>Live & Learn</small> 
           </h3>
         </div>
       </div>
 
       <div class="container content">
-        <div class="hero">
-  <img src="/public/img/we_will_be_giants_by_yalestewart.jpg" />
-  <p>Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a></p>
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/python/2019/06/20/Ipython/">
+        IPython
+      </a>
+    </h1>
+
+    <span class="post-date">20 Jun 2019</span>
+     |
+    
+    <a href="/blog/tags/#ipython" class="post-tag">ipython</a>
+    
+    <a href="/blog/tags/#jupyter-notebook" class="post-tag">jupyter notebook</a>
+    
+    
+<!--  -->
+    <!-- <article>
+      <h2 id="shortcut-and-tips-for-ipython">Shortcut and tips for Ipython</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">help</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span> <span class="c"># and len? would return docstring of the function len</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on built-in function len in module builtins:
+
+len(obj, /)
+    Return the number of items in a container.
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#  Both of these notations can be applied on objects as well.</span>
+<span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">help</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on list object:
+
+class list(object)
+ |  list(iterable=(), /)
+ |  
+ |  Built-in mutable sequence.
+ |  
+ |  If no argument is given, the constructor creates a new empty list.
+ |  The argument must be an iterable if specified.
+ |  
+ |  Methods defined here:
+ |  
+ |  __add__(self, value, /)
+ |      Return self+value.
+ |  
+ |  __contains__(self, key, /)
+ |      Return key in self.
+ |  
+ |  __delitem__(self, key, /)
+ |      Delete self[key].
+ |  
+ |  __eq__(self, value, /)
+ |      Return self==value.
+ |  
+ |  __ge__(self, value, /)
+ |      Return self&gt;=value.
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __getitem__(...)
+ |      x.__getitem__(y) &lt;==&gt; x[y]
+ |  
+ |  __gt__(self, value, /)
+ |      Return self&gt;value.
+ |  
+ |  __iadd__(self, value, /)
+ |      Implement self+=value.
+ |  
+ |  __imul__(self, value, /)
+ |      Implement self*=value.
+ |  
+ |  __init__(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |  
+ |  __le__(self, value, /)
+ |      Return self&lt;=value.
+ |  
+ |  __len__(self, /)
+ |      Return len(self).
+ |  
+ |  __lt__(self, value, /)
+ |      Return self&lt;value.
+ |  
+ |  __mul__(self, value, /)
+ |      Return self*value.
+ |  
+ |  __ne__(self, value, /)
+ |      Return self!=value.
+ |  
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |  
+ |  __reversed__(self, /)
+ |      Return a reverse iterator over the list.
+ |  
+ |  __rmul__(self, value, /)
+ |      Return value*self.
+ |  
+ |  __setitem__(self, key, value, /)
+ |      Set self[key] to value.
+ |  
+ |  __sizeof__(self, /)
+ |      Return the size of the list in memory, in bytes.
+ |  
+ |  append(self, object, /)
+ |      Append object to the end of the list.
+ |  
+ |  clear(self, /)
+ |      Remove all items from list.
+ |  
+ |  copy(self, /)
+ |      Return a shallow copy of the list.
+ |  
+ |  count(self, value, /)
+ |      Return number of occurrences of value.
+ |  
+ |  extend(self, iterable, /)
+ |      Extend list by appending elements from the iterable.
+ |  
+ |  index(self, value, start=0, stop=9223372036854775807, /)
+ |      Return first index of value.
+ |      
+ |      Raises ValueError if the value is not present.
+ |  
+ |  insert(self, index, object, /)
+ |      Insert object before index.
+ |  
+ |  pop(self, index=-1, /)
+ |      Remove and return item at index (default last).
+ |      
+ |      Raises IndexError if list is empty or index is out of range.
+ |  
+ |  remove(self, value, /)
+ |      Remove first occurrence of value.
+ |      
+ |      Raises ValueError if the value is not present.
+ |  
+ |  reverse(self, /)
+ |      Reverse *IN PLACE*.
+ |  
+ |  sort(self, /, *, key=None, reverse=False)
+ |      Stable sort *IN PLACE*.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  __hash__ = None
+</code></pre></div></div>
+
+<p>?? would also give the code if possible, that is written in python</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+    <span class="s">" test doc string"</span>
+    <span class="k">pass</span>
+<span class="n">func</span><span class="err">??</span>
+</code></pre></div></div>
+
+<p>TAB to auto complete. It basically pulls results of dir while hiding private methods or arguments. Private by convetion in python are represented by underscore.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># wild card can be used while searching.</span>
+<span class="nb">str</span><span class="o">.*</span><span class="n">find</span><span class="o">*</span><span class="err">?</span>
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>shortcuts</th>
+      <th>actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ctrl a</td>
+      <td>move to the begining of line</td>
+    </tr>
+    <tr>
+      <td>ctrl e</td>
+      <td>move to end of the line</td>
+    </tr>
+    <tr>
+      <td>ctrl k</td>
+      <td>cut till the end of line</td>
+    </tr>
+    <tr>
+      <td>ctrl u</td>
+      <td>cut from the begining of line</td>
+    </tr>
+    <tr>
+      <td>ctrl I</td>
+      <td>clear terminal</td>
+    </tr>
+    <tr>
+      <td>ctrl d</td>
+      <td>exit</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Ipython shortcuts</p>
+
+<p>% line magic</p>
+
+<p>%% cell magic</p>
+
+<p>run a file in python
+%run file.py argument</p>
+
+<p>This is same as python file.py arguments</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">run</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%run:
+ Run the named file inside IPython as a program.
+
+Usage::
+
+  %run [-n -i -e -G]
+       [( -t [-N&lt;N&gt;] | -d [-b&lt;N&gt;] | -p [profile options] )]
+       ( -m mod | file ) [args]
+
+Parameters after the filename are passed as command-line arguments to
+the program (put in sys.argv). Then, control returns to IPython's
+prompt.
+
+This is similar to running at a system prompt ``python file args``,
+but with the advantage of giving you IPython's tracebacks, and of
+loading all variables into your interactive namespace for further use
+(unless -p is used, see below).
+
+The file is executed in a namespace initially consisting only of
+``__name__=='__main__'`` and sys.argv constructed as indicated. It thus
+sees its environment as if it were being run as a stand-alone program
+(except for sharing global objects such as previously imported
+modules). But after execution, the IPython interactive namespace gets
+updated with all variables defined in the program (except for __name__
+and sys.argv). This allows for very convenient loading of code for
+interactive work, while giving each program a 'clean sheet' to run in.
+
+Arguments are expanded using shell-like glob match.  Patterns
+'*', '?', '[seq]' and '[!seq]' can be used.  Additionally,
+tilde '~' will be expanded into user's home directory.  Unlike
+real shells, quotation does not suppress expansions.  Use
+*two* back slashes (e.g. ``\\*``) to suppress expansions.
+To completely disable these expansions, you can use -G flag.
+
+On Windows systems, the use of single quotes `'` when specifying
+a file is not supported. Use double quotes `"`.
+
+Options:
+
+-n
+  __name__ is NOT set to '__main__', but to the running file's name
+  without extension (as python does under import).  This allows running
+  scripts and reloading the definitions in them without calling code
+  protected by an ``if __name__ == "__main__"`` clause.
+
+-i
+  run the file in IPython's namespace instead of an empty one. This
+  is useful if you are experimenting with code written in a text editor
+  which depends on variables defined interactively.
+
+-e
+  ignore sys.exit() calls or SystemExit exceptions in the script
+  being run.  This is particularly useful if IPython is being used to
+  run unittests, which always exit with a sys.exit() call.  In such
+  cases you are interested in the output of the test results, not in
+  seeing a traceback of the unittest module.
+
+-t
+  print timing information at the end of the run.  IPython will give
+  you an estimated CPU time consumption for your script, which under
+  Unix uses the resource module to avoid the wraparound problems of
+  time.clock().  Under Unix, an estimate of time spent on system tasks
+  is also given (for Windows platforms this is reported as 0.0).
+
+If -t is given, an additional ``-N&lt;N&gt;`` option can be given, where &lt;N&gt;
+must be an integer indicating how many times you want the script to
+run.  The final timing report will include total and per run results.
+
+For example (testing the script uniq_stable.py)::
+
+    In [1]: run -t uniq_stable
+
+    IPython CPU timings (estimated):
+      User  :    0.19597 s.
+      System:        0.0 s.
+
+    In [2]: run -t -N5 uniq_stable
+
+    IPython CPU timings (estimated):
+    Total runs performed: 5
+      Times :      Total       Per run
+      User  :   0.910862 s,  0.1821724 s.
+      System:        0.0 s,        0.0 s.
+
+-d
+  run your program under the control of pdb, the Python debugger.
+  This allows you to execute your program step by step, watch variables,
+  etc.  Internally, what IPython does is similar to calling::
+
+      pdb.run('execfile("YOURFILENAME")')
+
+  with a breakpoint set on line 1 of your file.  You can change the line
+  number for this automatic breakpoint to be &lt;N&gt; by using the -bN option
+  (where N must be an integer). For example::
+
+      %run -d -b40 myscript
+
+  will set the first breakpoint at line 40 in myscript.py.  Note that
+  the first breakpoint must be set on a line which actually does
+  something (not a comment or docstring) for it to stop execution.
+
+  Or you can specify a breakpoint in a different file::
+
+      %run -d -b myotherfile.py:20 myscript
+
+  When the pdb debugger starts, you will see a (Pdb) prompt.  You must
+  first enter 'c' (without quotes) to start execution up to the first
+  breakpoint.
+
+  Entering 'help' gives information about the use of the debugger.  You
+  can easily see pdb's full documentation with "import pdb;pdb.help()"
+  at a prompt.
+
+-p
+  run program under the control of the Python profiler module (which
+  prints a detailed report of execution times, function calls, etc).
+
+  You can pass other options after -p which affect the behavior of the
+  profiler itself. See the docs for %prun for details.
+
+  In this mode, the program's variables do NOT propagate back to the
+  IPython interactive namespace (because they remain in the namespace
+  where the profiler executes them).
+
+  Internally this triggers a call to %prun, see its documentation for
+  details on the options available specifically for profiling.
+
+There is one special usage for which the text above doesn't apply:
+if the filename ends with .ipy[nb], the file is run as ipython script,
+just as if the commands were written on IPython prompt.
+
+-m
+  specify module name to load instead of script path. Similar to
+  the -m option for the python interpreter. Use this option last if you
+  want to combine with other %run options. Unlike the python interpreter
+  only source modules are allowed no .pyc or .pyo files.
+  For example::
+
+      %run -m example
+
+  will run the example module.
+
+-G
+  disable shell-like glob expansion of arguments.
+
+
+/home/luffy/miniconda3/lib/python3.7/site-packages/IPython/core/magics/execution.py:691: UserWarning: you must provide at least a filename.
+  warn('you must provide at least a filename.')
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># to time a single line</span>
+<span class="o">%</span><span class="n">timeit</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>75.2 ns ± 1.29 ns per loop (mean ± std. dev. of 7 runs, 10000000 loops each)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">timeit</span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+    <span class="k">return</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">))</span>
+<span class="n">f</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+
+<span class="c"># to time the whole block</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>263 ns ± 9.34 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># More details of magic command can be found at</span>
+<span class="o">%</span><span class="n">magic</span>
+<span class="o">%</span><span class="n">lsmagic</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Available line magics:
+%alias  %alias_magic  %autoawait  %autocall  %automagic  %autosave  %bookmark  %cat  %cd  %clear  %colors  %conda  %config  %connect_info  %cp  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %pip  %popd  %pprint  %precision  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%markdown  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+Automagic is ON, % prefix IS NOT needed for line magics.
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Last value can accessed through _ underscore though it may be feature of ipython only. It can be used store garbage values</span>
+<span class="n">_</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Available line magics:
+%alias  %alias_magic  %autoawait  %autocall  %automagic  %autosave  %bookmark  %cat  %cd  %clear  %colors  %conda  %config  %connect_info  %cp  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %pip  %popd  %pprint  %precision  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%markdown  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+Automagic is ON, % prefix IS NOT needed for line magics.
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Semicolon</span> <span class="n">will</span> <span class="n">supress</span> <span class="n">the</span> <span class="n">output</span>
+<span class="n">_</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># to run the system commnad</span>
+<span class="err">!</span><span class="n">ls</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Ipython.ipynb	'python setup'
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># results can be saved in the list format</span>
+<span class="n">xres</span> <span class="o">=</span> <span class="err">!</span><span class="n">ls</span>
+<span class="n">xres</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['Ipython.ipynb', 'python setup']
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># !cd will not work since this commnad are executed in temporary shell</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="k">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+<span class="err">!</span><span class="n">cd</span> <span class="o">..</span>
+<span class="k">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/luffy/work/Code/Python
+/home/luffy/work/Code/Python
+</code></pre></div></div>
+
+<p>Standard python debugger pdb  or ipdn (ipython version) can used.
+To debug from ipython:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">xmode</span> <span class="n">Plain</span>
+</code></pre></div></div>
+
+    <article> -->
+    <!-- <div class="post-more">
+      
+      <a href="/python/2019/06/20/Ipython/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/python/2019/06/20/Ipython/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div> -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/terminal/2019/06/10/python-setup/">
+        Python setup
+      </a>
+    </h1>
+
+    <span class="post-date">10 Jun 2019</span>
+     |
+    
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+    
+    <a href="/blog/tags/#venv" class="post-tag">venv</a>
+    
+    <a href="/blog/tags/#conda" class="post-tag">conda</a>
+    
+    
+<!--  -->
+    <!-- <article>
+      <p>python3 should be on ubuntu by default, install pip</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install -y python3-pip
+</code></pre></div></div>
+
+<p>No sure why needed but install following as well:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install build-essential libssl-dev libffi-dev python-dev
+</code></pre></div></div>
+
+<p>Install virtual environment</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install -y python3-venv
+</code></pre></div></div>
+
+<p>Create virtual environment by running venv module:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 -m venv my_env
+</code></pre></div></div>
+
+<p>Use following to activate and deactivate the environment:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source my_env/bin/activate
+source pyenvs/base/bin/activate
+deactivate
+</code></pre></div></div>
+
+<p>Conda may be better in long run to manage the environment and installing packages (?)</p>
+
+<p>Add conda to the path</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=~/anaconda3/bin:$PATH
+</code></pre></div></div>
+
+<p>Create a conda env:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create --name my_env
+</code></pre></div></div>
+
+<p>Experimental but working with anaconda3 – add conda to the bash shell</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda init bash
+</code></pre></div></div>
+
+    <article> -->
+    <!-- <div class="post-more">
+      
+      <a href="/terminal/2019/06/10/python-setup/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/terminal/2019/06/10/python-setup/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div> -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/terminal/2019/06/09/git/">
+        Git
+      </a>
+    </h1>
+
+    <span class="post-date">09 Jun 2019</span>
+     |
+    
+    <a href="/blog/tags/#git" class="post-tag">git</a>
+    
+    
+<!--  -->
+    <!-- <article>
+      <p>Most likely git is already on ubuntu but if it is not then run the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install git
+</code></pre></div></div>
+
+<p>Config:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "xx"
+git config --global user.email "xx@gmail.com"
+</code></pre></div></div>
+
+<p>Create a repository:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init Mytest
+</code></pre></div></div>
+
+<p>Add a file</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add filename
+git add .
+</code></pre></div></div>
+
+<p>Commit the changes</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "message"
+</code></pre></div></div>
+
+<p>Pushing changes to web:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/user_name/Mytest.git
+git push origin master
+</code></pre></div></div>
+
+<p>It is much easier to create repo on web and clone it:</p>
+
+<p>Cloning a repository to local:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/user_name/reponamme
+</code></pre></div></div>
+
+<p>Once config is done then no need to add origin</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m "message"
+git push origin master
+</code></pre></div></div>
+
+    <article> -->
+    <!-- <div class="post-more">
+      
+      <a href="/terminal/2019/06/09/git/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/terminal/2019/06/09/git/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div> -->
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/terminal/2019/06/09/Jekyll/">
+        Jekyll
+      </a>
+    </h1>
+
+    <span class="post-date">09 Jun 2019</span>
+     |
+    
+    <a href="/blog/tags/#jekyll" class="post-tag">jekyll</a>
+    
+    <a href="/blog/tags/#ruby" class="post-tag">ruby</a>
+    
+    
+<!--  -->
+    <!-- <article>
+      <p>It may be better to follow github guide on setting github pages with Jekyll. It may change in future and following code may not be up to date.</p>
+
+<p>Install ruby using snap since it is latest there as compared to apt. However it may not be safe.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo snap install ruby --classic
+</code></pre></div></div>
+
+<p>Install the bundler gem</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+</code></pre></div></div>
+
+<p>Create a <code class="highlighter-rouge">Gemfile</code> with following code</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+</code></pre></div></div>
+
+<p>Run following to install all depenedecies as per Gemfile:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
+</code></pre></div></div>
+
+<p>This is not working on ubuntu 19.04, as of Jun 2019. As per solution pasted here:</p>
+
+<p><a href="https://github.com/eventmachine/eventmachine/issues/881">https://github.com/eventmachine/eventmachine/issues/881</a></p>
+
+<p>We try to install ruby with RVM (ruby version manager)</p>
+
+<p>First instll gnupg2 and curl</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install gnupg2
+sudo apt install curl
+</code></pre></div></div>
+
+<p>Get key from here: <a href="https://rvm.io/]">https://rvm.io/</a></p>
+
+<p>Install ruby + rails, feels like overkill to just build one static site (?)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+\curl -sSL https://get.rvm.io | bash -s stable --rails
+</code></pre></div></div>
+
+<p>To use ruby add following:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source /home/luffy/.rvm/scripts/rvm
+</code></pre></div></div>
+
+<p>Create a new site:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll _3.3.0_ new web
+</code></pre></div></div>
+
+<p>In Gemfile change following: comment gem jekyll line and uncomment github line</p>
+
+<p>To run the site locally:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+</code></pre></div></div>
+
+    <article> -->
+    <!-- <div class="post-more">
+      
+      <a href="/terminal/2019/06/09/Jekyll/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/terminal/2019/06/09/Jekyll/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div> -->
+  </div>
+  
 </div>
 
       </div>

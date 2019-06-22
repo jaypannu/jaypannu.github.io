@@ -1,13 +1,25 @@
 ---
-layout: page
+layout: default
 title: About
 ---
+
+<!-- ---
+layout: default
+title: Home
+--- -->
+
+
+<div class="hero">
+  <img src="{{ site.baseurl }}{{ site.hero.image }}" />
+  <p>{{ site.hero.caption }}</p>
+</div>
+
 
 <!-- <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p> -->
 
-<br>
+<!-- <br>
 
 <div class="hero">
   <img src="/public/realocean.jpg" />
@@ -56,4 +68,4 @@ Of that colossal wreck, boundless and bare
 The lone and level sands stretch far away
 
 
-_by Percy Bysshe Shelley_
+_by Percy Bysshe Shelley_ -->

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Jekyll
-date:   2019-04-12 01:25:21 +0530
+date:   2019-06-09 01:25:21 +0530
 categories: terminal
 tags: [jekyll, ruby]
 ---

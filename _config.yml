@@ -1,5 +1,5 @@
 # Site Info
-title: Docs
+title: 'Live & Learn'
 tagline: 'Live & Learn'
 # description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 # baseurl: "/lanyon"
@@ -39,10 +39,14 @@ author:
 nav:
   Home:
     - '/'
-  Blog:
-    - '/blog/'
-    - { Categories: '/blog/categories/' }
-    - { Tags: '/blog/tags/' }
+  Categories:
+    - '/blog/categories/'
+  Tags:
+    - '/blog/tags/'
+  # Blog:
+    # - '/blog/'
+    # - { Categories: '/blog/categories/' }
+    # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
 
