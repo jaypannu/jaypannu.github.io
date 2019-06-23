@@ -2,7 +2,7 @@
 layout: post
 title:  "IPython"
 date:   2019-06-20 01:25:21 +0530
-categories: Python
+categories: python
 tags: [ipython, jupyter notebook]
 ---
 
