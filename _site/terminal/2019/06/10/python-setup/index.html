@@ -11,7 +11,7 @@
 
   <title>
     
-      404: Page not found &middot; notes
+      Python setup &middot; notes
     
   </title>
 
@@ -139,10 +139,111 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
       </div>
 
       <div class="container content">
-        <div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/">Head back home</a> to try finding it again.</p>
+        <div class="post">
+  <h1 class="post-title">Python setup</h1>
+  <span class="post-date">10 Jun 2019</span>
+   | 
+  
+    <a href="/blog/tags/#python" class="post-tag">python</a>
+  
+    <a href="/blog/tags/#venv" class="post-tag">venv</a>
+  
+    <a href="/blog/tags/#conda" class="post-tag">conda</a>
+  
+  
+  <article>
+    <p>python3 should be on ubuntu by default, install pip</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install -y python3-pip
+</code></pre></div></div>
+
+<p>No sure why needed but install following as well:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install build-essential libssl-dev libffi-dev python-dev
+</code></pre></div></div>
+
+<p>Install virtual environment</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install -y python3-venv
+</code></pre></div></div>
+
+<p>Create virtual environment by running venv module:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 -m venv my_env
+</code></pre></div></div>
+
+<p>Use following to activate and deactivate the environment:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source my_env/bin/activate
+source pyenvs/base/bin/activate
+deactivate
+</code></pre></div></div>
+
+<p>Conda may be better in long run to manage the environment and installing packages (?)</p>
+
+<p>Add conda to the path</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=~/anaconda3/bin:$PATH
+</code></pre></div></div>
+
+<p>Create a conda env:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create --name my_env
+</code></pre></div></div>
+
+<p>Experimental but working with anaconda3 – add conda to the bash shell</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda init bash
+</code></pre></div></div>
+
+  </article>
 </div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/python/2019/06/22/numpy/">
+            numpy
+            <small>22 Jun 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/python/2019/06/20/Ipython/">
+            IPython
+            <small>20 Jun 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/terminal/2019/06/09/git/">
+            Git
+            <small>09 Jun 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+<div class="comments">
+  <h2>Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>
+var disqus_config = function () {
+  this.page.url = 'http://localhost:4000/terminal/2019/06/10/python-setup/'; // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = '/terminal/2019/06/10/python-setup'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = '//jaypannu.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
 
       </div>
     </div>

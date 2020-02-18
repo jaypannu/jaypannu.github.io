@@ -9,10 +9,11 @@ title: Home
 --- -->
 
 
-<div class="hero">
+
+<!-- <div class="hero">
   <img src="{{ site.baseurl }}{{ site.hero.image }}" />
   <p>{{ site.hero.caption }}</p>
-</div>
+</div> -->
 
 
 <!-- <p class="message">

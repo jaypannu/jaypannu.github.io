@@ -10,7 +10,7 @@ tags: [git]
 
 Most likely git is already on ubuntu but if it is not then run the following:
 
-```
+```bash
 sudo apt-get install git
 ```
 

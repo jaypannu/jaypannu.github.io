@@ -11,7 +11,7 @@
 
   <title>
     
-      404: Page not found &middot; notes
+      Git &middot; notes
     
   </title>
 
@@ -139,10 +139,111 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
       </div>
 
       <div class="container content">
-        <div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/">Head back home</a> to try finding it again.</p>
+        <div class="post">
+  <h1 class="post-title">Git</h1>
+  <span class="post-date">09 Jun 2019</span>
+   | 
+  
+    <a href="/blog/tags/#git" class="post-tag">git</a>
+  
+  
+  <article>
+    <p>Most likely git is already on ubuntu but if it is not then run the following:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>git
+</code></pre></div></div>
+
+<p>Config:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "xx"
+git config --global user.email "xx@gmail.com"
+</code></pre></div></div>
+
+<p>Create a repository:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init Mytest
+</code></pre></div></div>
+
+<p>Add a file</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add filename
+git add .
+</code></pre></div></div>
+
+<p>Commit the changes</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "message"
+</code></pre></div></div>
+
+<p>Pushing changes to web:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/user_name/Mytest.git
+git push origin master
+</code></pre></div></div>
+
+<p>It is much easier to create repo on web and clone it:</p>
+
+<p>Cloning a repository to local:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/user_name/reponamme
+</code></pre></div></div>
+
+<p>Once config is done then no need to add origin</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m "message"
+git push origin master
+</code></pre></div></div>
+
+  </article>
 </div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/python/2019/06/22/numpy/">
+            numpy
+            <small>22 Jun 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/python/2019/06/20/Ipython/">
+            IPython
+            <small>20 Jun 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/terminal/2019/06/10/python-setup/">
+            Python setup
+            <small>10 Jun 2019</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+<div class="comments">
+  <h2>Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>
+var disqus_config = function () {
+  this.page.url = 'http://localhost:4000/terminal/2019/06/09/git/'; // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = '/terminal/2019/06/09/git'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+(function() {
+  var d = document, s = d.createElement('script');
+  s.src = '//jaypannu.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
+
 
       </div>
     </div>

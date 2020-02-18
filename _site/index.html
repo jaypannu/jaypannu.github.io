@@ -11,15 +11,15 @@
 
   <title>
     
-       &middot; things fall apart
+       &middot; notes
     
   </title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="/public/css/main.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
-
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700%Ubuntu:400">
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="/public/favicon.png">
@@ -105,28 +105,13 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
       </span>
 
     
-      
-      
-      
-
-      
-
-      <span class="">
-        <a class="sidebar-nav-item " href="/about/">
-          About
-        </a>
-
-        
-      </span>
-
-    
 
     <!-- <span class="sidebar-nav-item">Currently v1.0.0</span> -->
   </nav>
 
   <div class="sidebar-item">
     <p>
-    &copy; 2019 jaypannu.
+    &copy; 2020 jp.
     <!-- This work is liscensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>. -->
     </p>
   </div>
@@ -145,9 +130,9 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home" title="things fall apart">
+            <a href="/" title="Home" title="notes">
               <img class="masthead-logo" src="/public/favicon.png"/>
-              <small style="color:#846978;";>things fall apart</small>
+              <small style="color:#846978;";>notes</small>
             </a>
           </h3>
         </div>
@@ -156,23 +141,23 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
       <div class="container content">
         <div class="posts">
   
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/python/2019/06/22/numpy/">
-        numpy
-      </a>
-    </h1>
+  <!-- <div class="post"> -->
+    <!-- <h1 class="post-title">
 
-    <span class="post-date">22 Jun 2019</span>
-     |
-    
-    <a href="/blog/tags/#numpy" class="post-tag">numpy</a>
-    
-    <a href="/blog/tags/#selection-sort" class="post-tag">selection sort</a>
-    
-    <a href="/blog/tags/#python" class="post-tag">python</a>
-    
-    
+    </h1> -->
+
+    <span class="post-date">22 Jun 2019  <a href="/python/2019/06/22/numpy/">
+            numpy
+          </a></span>
+    <!--  |
+     -->
+    <!-- <a href="/blog/tags/#numpy" class="post-tag">numpy</a> -->
+    <!--  -->
+    <!-- <a href="/blog/tags/#selection-sort" class="post-tag">selection sort</a> -->
+    <!--  -->
+    <!-- <a href="/blog/tags/#python" class="post-tag">python</a> -->
+    <!--  -->
+    <!--  -->
 <!--  -->
     <!-- <article>
       <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
@@ -181,13 +166,13 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
 <p>Numpy has four main attributes for inspection</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span> <span class="c"># number of dimensions</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c"># length along the dimension</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">)</span> <span class="c"># total numbers of elements</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span> <span class="c"># data type of element</span>
-</code></pre></div></div>
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">ndim</span><span class="p">)</span> <span class="c1"># number of dimensions
+</span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># length along the dimension
+</span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">)</span> <span class="c1"># total numbers of elements
+</span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span> <span class="c1"># data type of element
+</span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
 (2, 2)
 4
 int64
@@ -200,24 +185,24 @@ int64
 </code></pre></div></div>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">timeit</span>
-<span class="c"># using ufuncs</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="c1"># using ufuncs
+</span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>11 µs ± 520 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>11 µs ± 520 ns per loop (mean ± std. dev. of 7 runs, 100000 loops each)
 </code></pre></div></div>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">timeit</span>
-<span class="c"># using loop</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
+<span class="c1"># using loop
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
     <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>8.23 ms ± 99.2 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>8.23 ms ± 99.2 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># np.linspace, important function</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># np.linspace, important function
+</span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
     <span class="n">stop</span><span class="o">=</span><span class="mi">48</span><span class="p">,</span>
     <span class="n">num</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
     <span class="n">endpoint</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
@@ -227,7 +212,7 @@ int64
 <span class="n">x</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([ 2.        ,  2.93877551,  3.87755102,  4.81632653,  5.75510204,
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([ 2.        ,  2.93877551,  3.87755102,  4.81632653,  5.75510204,
         6.69387755,  7.63265306,  8.57142857,  9.51020408, 10.44897959,
        11.3877551 , 12.32653061, 13.26530612, 14.20408163, 15.14285714,
        16.08163265, 17.02040816, 17.95918367, 18.89795918, 19.83673469,
@@ -239,12 +224,12 @@ int64
        44.24489796, 45.18367347, 46.12244898, 47.06122449, 48.        ])
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># numpy has lots of mathematical function but some odd function can be imported from scipy.special</span>
-<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">special</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># numpy has lots of mathematical function but some odd function can be imported from scipy.special
+</span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">special</span>
 <span class="n">special</span><span class="o">.</span><span class="n">gamma</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([1., 1., 6.])
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([1., 1., 6.])
 </code></pre></div></div>
 
 <p>Output can intialized before to speed. Numpy provides convinent way to assign.</p>
@@ -255,7 +240,7 @@ int64
 <span class="n">y</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.,
@@ -263,12 +248,12 @@ int64
        1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.])
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># np unfucs can be called by np.add instead of +</span>
-<span class="c"># these functions have further methods</span>
-<span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="o">.</span><span class="nb">reduce</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># np unfucs can be called by np.add instead of +
+# these functions have further methods
+</span><span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="o">.</span><span class="nb">reduce</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>100.0
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>100.0
 </code></pre></div></div>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])[:,</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
@@ -277,13 +262,13 @@ int64
 <span class="k">print</span><span class="p">(</span><span class="s">"x:"</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="s">"y:"</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="s">"z:"</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
-<span class="c"># shape</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"x shape:"</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c"># 2 rows and 1 columns</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"y shape:"</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c"># 1 row and 2 columns</span>
-<span class="k">print</span><span class="p">(</span><span class="s">"z shape:"</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c"># z is one dimensional vector</span>
-</code></pre></div></div>
+<span class="c1"># shape
+</span><span class="k">print</span><span class="p">(</span><span class="s">"x shape:"</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c1"># 2 rows and 1 columns
+</span><span class="k">print</span><span class="p">(</span><span class="s">"y shape:"</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c1"># 1 row and 2 columns
+</span><span class="k">print</span><span class="p">(</span><span class="s">"z shape:"</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="c1"># z is one dimensional vector
+</span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x: [[1]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>x: [[1]
  [2]]
 y: [[3 4]]
 z: [5 6]
@@ -306,7 +291,7 @@ Here z is converted to (1,2) while adding to y</li>
 <span class="k">print</span><span class="p">(</span><span class="s">'zy:'</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zy: [[ 8 10]]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zy: [[ 8 10]]
 zx: [[6 7]
  [7 8]]
 zy: [[4 5]
@@ -321,35 +306,35 @@ zy: [[4 5]
 
 <p>^ xor</p>
 
-<p><code class="highlighter-rouge">and</code> and <code class="highlighter-rouge">or</code> compares the whole object so they are better suited for control flow statement. For vector use numpy <code class="highlighter-rouge">&amp;</code> and <code class="highlighter-rouge">|</code></p>
+<p><code class="language-plaintext highlighter-rouge">and</code> and <code class="language-plaintext highlighter-rouge">or</code> compares the whole object so they are better suited for control flow statement. For vector use numpy <code class="language-plaintext highlighter-rouge">&amp;</code> and <code class="language-plaintext highlighter-rouge">|</code></p>
 
 <h2 id="fancy-indexing">Fancy indexing</h2>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># used by [] brackets</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
-<span class="n">x</span><span class="p">[[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]]</span> <span class="c"># fetches 2 and 3 element</span>
-
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># used by [] brackets
+</span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
+<span class="n">x</span><span class="p">[[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]]</span> <span class="c1"># fetches 2 and 3 element
+</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([4, 5])
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([4, 5])
 </code></pre></div></div>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]])</span>
-<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c"># second row</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># second row
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([4, 5])
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([4, 5])
-</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span> <span class="c1"># first row and first columns
+</span></code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span> <span class="c"># first row and first columns</span>
-</code></pre></div></div>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[2, 3],
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([[2, 3],
        [4, 5]])
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># selection sort</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># selection sort
+</span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">):</span>
     <span class="n">swap</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">:])</span>
     <span class="n">tmp</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
@@ -357,17 +342,17 @@ zy: [[4 5]
 <span class="n">x</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([2, 3, 3, 3, 4, 5, 5, 6, 6, 7, 8, 9, 9])
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>array([2, 3, 3, 3, 4, 5, 5, 6, 6, 7, 8, 9, 9])
 </code></pre></div></div>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="c"># returns the sorted array</span>
-<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="n">x</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span> <span class="c"># sort in place</span>
-<span class="n">x</span> <span class="c"># do all object method sort in place</span>
-</code></pre></div></div>
+<span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="c1"># returns the sorted array
+</span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">x</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span> <span class="c1"># sort in place
+</span><span class="n">x</span> <span class="c1"># do all object method sort in place
+</span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2 3 3 3 4 5 5 6 6 7 8 9 9]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2 3 3 3 4 5 5 6 6 7 8 9 9]
 [2 3 4 5 6 7 8 9 9 3 3 5 6]
 
 
@@ -384,42 +369,42 @@ array([2, 3, 3, 3, 4, 5, 5, 6, 6, 7, 8, 9, 9])
       
       <a href="/python/2019/06/22/numpy/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div> -->
-  </div>
+  <!-- </div> -->
   
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/python/2019/06/20/Ipython/">
-        IPython
-      </a>
-    </h1>
+  <!-- <div class="post"> -->
+    <!-- <h1 class="post-title">
 
-    <span class="post-date">20 Jun 2019</span>
-     |
-    
-    <a href="/blog/tags/#ipython" class="post-tag">ipython</a>
-    
-    <a href="/blog/tags/#jupyter-notebook" class="post-tag">jupyter notebook</a>
-    
-    
+    </h1> -->
+
+    <span class="post-date">20 Jun 2019  <a href="/python/2019/06/20/Ipython/">
+            IPython
+          </a></span>
+    <!--  |
+     -->
+    <!-- <a href="/blog/tags/#ipython" class="post-tag">ipython</a> -->
+    <!--  -->
+    <!-- <a href="/blog/tags/#jupyter-notebook" class="post-tag">jupyter notebook</a> -->
+    <!--  -->
+    <!--  -->
 <!--  -->
     <!-- <article>
       <h2 id="shortcut-and-tips-for-ipython">Shortcut and tips for Ipython</h2>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">help</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span> <span class="c"># and len? would return docstring of the function len</span>
-</code></pre></div></div>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">help</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span> <span class="c1"># and len? would return docstring of the function len
+</span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on built-in function len in module builtins:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on built-in function len in module builtins:
 
 len(obj, /)
     Return the number of items in a container.
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#  Both of these notations can be applied on objects as well.</span>
-<span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#  Both of these notations can be applied on objects as well.
+</span><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">help</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on list object:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Help on list object:
 
 class list(object)
  |  list(iterable=(), /)
@@ -558,8 +543,8 @@ class list(object)
 
 <p>TAB to auto complete. It basically pulls results of dir while hiding private methods or arguments. Private by convetion in python are represented by underscore.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># wild card can be used while searching.</span>
-<span class="nb">str</span><span class="o">.*</span><span class="n">find</span><span class="o">*</span><span class="err">?</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># wild card can be used while searching.
+</span><span class="nb">str</span><span class="o">.*</span><span class="n">find</span><span class="o">*</span><span class="err">?</span>
 </code></pre></div></div>
 
 <table>
@@ -611,7 +596,7 @@ class list(object)
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%</span><span class="n">run</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%run:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%run:
  Run the named file inside IPython as a program.
 
 Usage::
@@ -761,11 +746,11 @@ just as if the commands were written on IPython prompt.
   warn('you must provide at least a filename.')
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># to time a single line</span>
-<span class="o">%</span><span class="n">timeit</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># to time a single line
+</span><span class="o">%</span><span class="n">timeit</span> <span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>75.2 ns ± 1.29 ns per loop (mean ± std. dev. of 7 runs, 10000000 loops each)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>75.2 ns ± 1.29 ns per loop (mean ± std. dev. of 7 runs, 10000000 loops each)
 </code></pre></div></div>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">timeit</span>
@@ -773,18 +758,18 @@ just as if the commands were written on IPython prompt.
     <span class="k">return</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">L</span><span class="p">))</span>
 <span class="n">f</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 
-<span class="c"># to time the whole block</span>
+<span class="c1"># to time the whole block
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>263 ns ± 9.34 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>263 ns ± 9.34 ns per loop (mean ± std. dev. of 7 runs, 1000000 loops each)
-</code></pre></div></div>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># More details of magic command can be found at</span>
-<span class="o">%</span><span class="n">magic</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># More details of magic command can be found at
+</span><span class="o">%</span><span class="n">magic</span>
 <span class="o">%</span><span class="n">lsmagic</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Available line magics:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Available line magics:
 %alias  %alias_magic  %autoawait  %autocall  %automagic  %autosave  %bookmark  %cat  %cd  %clear  %colors  %conda  %config  %connect_info  %cp  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %pip  %popd  %pprint  %precision  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
 
 Available cell magics:
@@ -793,11 +778,11 @@ Available cell magics:
 Automagic is ON, % prefix IS NOT needed for line magics.
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Last value can accessed through _ underscore though it may be feature of ipython only. It can be used store garbage values</span>
-<span class="n">_</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Last value can accessed through _ underscore though it may be feature of ipython only. It can be used store garbage values
+</span><span class="n">_</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Available line magics:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Available line magics:
 %alias  %alias_magic  %autoawait  %autocall  %automagic  %autosave  %bookmark  %cat  %cd  %clear  %colors  %conda  %config  %connect_info  %cp  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %pip  %popd  %pprint  %precision  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %qtconsole  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
 
 Available cell magics:
@@ -810,29 +795,29 @@ Automagic is ON, % prefix IS NOT needed for line magics.
 <span class="n">_</span><span class="p">;</span>
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># to run the system commnad</span>
-<span class="err">!</span><span class="n">ls</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># to run the system commnad
+</span><span class="err">!</span><span class="n">ls</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Ipython.ipynb	'python setup'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Ipython.ipynb	'python setup'
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># results can be saved in the list format</span>
-<span class="n">xres</span> <span class="o">=</span> <span class="err">!</span><span class="n">ls</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># results can be saved in the list format
+</span><span class="n">xres</span> <span class="o">=</span> <span class="err">!</span><span class="n">ls</span>
 <span class="n">xres</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['Ipython.ipynb', 'python setup']
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['Ipython.ipynb', 'python setup']
 </code></pre></div></div>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># !cd will not work since this commnad are executed in temporary shell</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># !cd will not work since this commnad are executed in temporary shell
+</span><span class="kn">import</span> <span class="nn">os</span>
 <span class="k">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
 <span class="err">!</span><span class="n">cd</span> <span class="o">..</span>
 <span class="k">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/luffy/work/Code/Python
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/home/luffy/work/Code/Python
 /home/luffy/work/Code/Python
 </code></pre></div></div>
 
@@ -849,45 +834,45 @@ To debug from ipython:</p>
       
       <a href="/python/2019/06/20/Ipython/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div> -->
-  </div>
+  <!-- </div> -->
   
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/terminal/2019/06/10/python-setup/">
-        Python setup
-      </a>
-    </h1>
+  <!-- <div class="post"> -->
+    <!-- <h1 class="post-title">
 
-    <span class="post-date">10 Jun 2019</span>
-     |
-    
-    <a href="/blog/tags/#python" class="post-tag">python</a>
-    
-    <a href="/blog/tags/#venv" class="post-tag">venv</a>
-    
-    <a href="/blog/tags/#conda" class="post-tag">conda</a>
-    
-    
+    </h1> -->
+
+    <span class="post-date">10 Jun 2019  <a href="/terminal/2019/06/10/python-setup/">
+            Python setup
+          </a></span>
+    <!--  |
+     -->
+    <!-- <a href="/blog/tags/#python" class="post-tag">python</a> -->
+    <!--  -->
+    <!-- <a href="/blog/tags/#venv" class="post-tag">venv</a> -->
+    <!--  -->
+    <!-- <a href="/blog/tags/#conda" class="post-tag">conda</a> -->
+    <!--  -->
+    <!--  -->
 <!--  -->
     <!-- <article>
       <p>python3 should be on ubuntu by default, install pip</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install -y python3-pip
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install -y python3-pip
 </code></pre></div></div>
 
 <p>No sure why needed but install following as well:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install build-essential libssl-dev libffi-dev python-dev
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install build-essential libssl-dev libffi-dev python-dev
 </code></pre></div></div>
 
 <p>Install virtual environment</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install -y python3-venv
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install -y python3-venv
 </code></pre></div></div>
 
 <p>Create virtual environment by running venv module:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 -m venv my_env
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 -m venv my_env
 </code></pre></div></div>
 
 <p>Use following to activate and deactivate the environment:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source my_env/bin/activate
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source my_env/bin/activate
 source pyenvs/base/bin/activate
 deactivate
 </code></pre></div></div>
@@ -895,15 +880,15 @@ deactivate
 <p>Conda may be better in long run to manage the environment and installing packages (?)</p>
 
 <p>Add conda to the path</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=~/anaconda3/bin:$PATH
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH=~/anaconda3/bin:$PATH
 </code></pre></div></div>
 
 <p>Create a conda env:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create --name my_env
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create --name my_env
 </code></pre></div></div>
 
 <p>Experimental but working with anaconda3 – add conda to the bash shell</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda init bash
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda init bash
 </code></pre></div></div>
 
     <article> -->
@@ -913,59 +898,59 @@ deactivate
       
       <a href="/terminal/2019/06/10/python-setup/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div> -->
-  </div>
+  <!-- </div> -->
   
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/terminal/2019/06/09/git/">
-        Git
-      </a>
-    </h1>
+  <!-- <div class="post"> -->
+    <!-- <h1 class="post-title">
 
-    <span class="post-date">09 Jun 2019</span>
-     |
-    
-    <a href="/blog/tags/#git" class="post-tag">git</a>
-    
-    
+    </h1> -->
+
+    <span class="post-date">09 Jun 2019  <a href="/terminal/2019/06/09/git/">
+            Git
+          </a></span>
+    <!--  |
+     -->
+    <!-- <a href="/blog/tags/#git" class="post-tag">git</a> -->
+    <!--  -->
+    <!--  -->
 <!--  -->
     <!-- <article>
       <p>Most likely git is already on ubuntu but if it is not then run the following:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install git
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>git
 </code></pre></div></div>
 
 <p>Config:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "xx"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "xx"
 git config --global user.email "xx@gmail.com"
 </code></pre></div></div>
 
 <p>Create a repository:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init Mytest
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init Mytest
 </code></pre></div></div>
 
 <p>Add a file</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add filename
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add filename
 git add .
 </code></pre></div></div>
 
 <p>Commit the changes</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "message"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "message"
 </code></pre></div></div>
 
 <p>Pushing changes to web:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/user_name/Mytest.git
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/user_name/Mytest.git
 git push origin master
 </code></pre></div></div>
 
 <p>It is much easier to create repo on web and clone it:</p>
 
 <p>Cloning a repository to local:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/user_name/reponamme
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/user_name/reponamme
 </code></pre></div></div>
 
 <p>Once config is done then no need to add origin</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
 git commit -m "message"
 git push origin master
 </code></pre></div></div>
@@ -977,46 +962,46 @@ git push origin master
       
       <a href="/terminal/2019/06/09/git/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div> -->
-  </div>
+  <!-- </div> -->
   
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/terminal/2019/06/09/Jekyll/">
-        Jekyll
-      </a>
-    </h1>
+  <!-- <div class="post"> -->
+    <!-- <h1 class="post-title">
 
-    <span class="post-date">09 Jun 2019</span>
-     |
-    
-    <a href="/blog/tags/#jekyll" class="post-tag">jekyll</a>
-    
-    <a href="/blog/tags/#ruby" class="post-tag">ruby</a>
-    
-    
+    </h1> -->
+
+    <span class="post-date">09 Jun 2019  <a href="/terminal/2019/06/09/Jekyll/">
+            Jekyll
+          </a></span>
+    <!--  |
+     -->
+    <!-- <a href="/blog/tags/#jekyll" class="post-tag">jekyll</a> -->
+    <!--  -->
+    <!-- <a href="/blog/tags/#ruby" class="post-tag">ruby</a> -->
+    <!--  -->
+    <!--  -->
 <!--  -->
     <!-- <article>
       <p>It may be better to follow github guide on setting github pages with Jekyll. It may change in future and following code may not be up to date.</p>
 
 <p>Install ruby using snap since it is latest there as compared to apt. However it may not be safe.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo snap install ruby --classic
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo snap install ruby --classic
 </code></pre></div></div>
 
 <p>Install the bundler gem</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
 </code></pre></div></div>
 
-<p>Create a <code class="highlighter-rouge">Gemfile</code> with following code</p>
+<p>Create a <code class="language-plaintext highlighter-rouge">Gemfile</code> with following code</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
 </code></pre></div></div>
 
 <p>Run following to install all depenedecies as per Gemfile:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
 </code></pre></div></div>
 
 <p>This is not working on ubuntu 19.04, as of Jun 2019. As per solution pasted here:</p>
@@ -1026,7 +1011,7 @@ gem 'github-pages', group: :jekyll_plugins
 <p>We try to install ruby with RVM (ruby version manager)</p>
 
 <p>First instll gnupg2 and curl</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install gnupg2
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install gnupg2
 sudo apt install curl
 </code></pre></div></div>
 
@@ -1034,22 +1019,22 @@ sudo apt install curl
 
 <p>Install ruby + rails, feels like overkill to just build one static site (?)</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 \curl -sSL https://get.rvm.io | bash -s stable --rails
 </code></pre></div></div>
 
 <p>To use ruby add following:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source /home/luffy/.rvm/scripts/rvm
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source /home/luffy/.rvm/scripts/rvm
 </code></pre></div></div>
 
 <p>Create a new site:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll _3.3.0_ new web
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll _3.3.0_ new web
 </code></pre></div></div>
 
 <p>In Gemfile change following: comment gem jekyll line and uncomment github line</p>
 
 <p>To run the site locally:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
 </code></pre></div></div>
 
     <article> -->
@@ -1059,7 +1044,7 @@ sudo apt install curl
       
       <a href="/terminal/2019/06/09/Jekyll/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div> -->
-  </div>
+  <!-- </div> -->
   
 </div>
 
