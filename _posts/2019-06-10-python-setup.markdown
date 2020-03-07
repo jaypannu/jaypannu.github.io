@@ -47,6 +47,7 @@ conda create --name my_env
 ```
 
 
+
 Experimental but working with anaconda3 -- add conda to the bash shell
 ```
 conda init bash

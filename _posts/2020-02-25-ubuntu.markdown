@@ -35,3 +35,18 @@ Install tweaks
 ```bash
 sudo apt install gnome-tweaks
 ```
+
+Atom spell check: change locale to en-US.
+
+System hangs while copying file, edit /etc/sysctl.conf
+
+```
+vm.dirty_background_ratio = 5
+vm.dirty_ratio = 10
+vm.swappiness=1
+```
+
+And run
+```
+sudo sysctl -p
+```
