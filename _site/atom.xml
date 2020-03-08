@@ -4,13 +4,22 @@
  <title>notes</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-02-27T21:31:08+05:30</updated>
+ <updated>2020-03-08T09:59:16+05:30</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>jp</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>The Good Place</title>
+   <link href="http://localhost:4000/review/2020/03/05/The-Good-Place/"/>
+   <updated>2020-03-05T00:00:00+05:30</updated>
+   <id>http://localhost:4000/review/2020/03/05/The-Good-Place</id>
+   <content type="html">&lt;p&gt;It has its moments. Ups and downs. Idea is original.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Ubuntu</title>

@@ -146,6 +146,32 @@ MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], proces
 
     </h1> -->
 
+    <span class="post-date">05 Mar 2020  <a href="/review/2020/03/05/The-Good-Place/">
+            The Good Place
+          </a></span>
+    <!--  |
+     -->
+    <!-- <a href="/blog/tags/#tvseries" class="post-tag">tvseries</a> -->
+    <!--  -->
+    <!--  -->
+<!--  -->
+    <!-- <article>
+      <p>It has its moments. Ups and downs. Idea is original.</p>
+
+    <article> -->
+    <!-- <div class="post-more">
+      
+      <a href="/review/2020/03/05/The-Good-Place/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/review/2020/03/05/The-Good-Place/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div> -->
+  <!-- </div> -->
+  
+  <!-- <div class="post"> -->
+    <!-- <h1 class="post-title">
+
+    </h1> -->
+
     <span class="post-date">25 Feb 2020  <a href="/terminal/2020/02/25/ubuntu/">
             Ubuntu
           </a></span>
@@ -903,6 +929,88 @@ git push origin master
       <a href="/terminal/2019/06/09/git/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
       
       <a href="/terminal/2019/06/09/git/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
+    </div> -->
+  <!-- </div> -->
+  
+  <!-- <div class="post"> -->
+    <!-- <h1 class="post-title">
+
+    </h1> -->
+
+    <span class="post-date">09 Jun 2019  <a href="/terminal/2019/06/09/Jekyll/">
+            Jekyll
+          </a></span>
+    <!--  |
+     -->
+    <!-- <a href="/blog/tags/#jekyll" class="post-tag">jekyll</a> -->
+    <!--  -->
+    <!-- <a href="/blog/tags/#ruby" class="post-tag">ruby</a> -->
+    <!--  -->
+    <!--  -->
+<!--  -->
+    <!-- <article>
+      <p>It may be better to follow github guide on setting github pages with Jekyll. It may change in future and following code may not be up to date.</p>
+
+<p>Install ruby using snap since it is latest there as compared to apt. However it may not be safe.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo snap install ruby --classic
+</code></pre></div></div>
+
+<p>Install the bundler gem</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install bundler
+</code></pre></div></div>
+
+<p>Create a <code class="language-plaintext highlighter-rouge">Gemfile</code> with following code</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+gem 'github-pages', group: :jekyll_plugins
+</code></pre></div></div>
+
+<p>Run following to install all depenedecies as per Gemfile:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
+</code></pre></div></div>
+
+<p>This is not working on ubuntu 19.04, as of Jun 2019. As per solution pasted here:</p>
+
+<p><a href="https://github.com/eventmachine/eventmachine/issues/881">https://github.com/eventmachine/eventmachine/issues/881</a></p>
+
+<p>We try to install ruby with RVM (ruby version manager)</p>
+
+<p>First instll gnupg2 and curl</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install gnupg2
+sudo apt install curl
+</code></pre></div></div>
+
+<p>Get key from here: <a href="https://rvm.io/]">https://rvm.io/</a></p>
+
+<p>Install ruby + rails, feels like overkill to just build one static site (?)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+\curl -sSL https://get.rvm.io | bash -s stable --rails
+</code></pre></div></div>
+
+<p>To use ruby add following:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source /home/luffy/.rvm/scripts/rvm
+</code></pre></div></div>
+
+<p>Create a new site:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll _3.3.0_ new web
+</code></pre></div></div>
+
+<p>In Gemfile change following: comment gem jekyll line and uncomment github line</p>
+
+<p>To run the site locally:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve
+</code></pre></div></div>
+
+    <article> -->
+    <!-- <div class="post-more">
+      
+      <a href="/terminal/2019/06/09/Jekyll/#disqus_thread"> <i class="fa fa-comments" aria-hidden="true"></i>Comment</a>&nbsp;
+      
+      <a href="/terminal/2019/06/09/Jekyll/"><i class="fa fa-plus-circle" aria-hidden="true"></i>Read more</a>
     </div> -->
   <!-- </div> -->
   
