@@ -68,7 +68,51 @@ bundle exec jekyll _3.3.0_ new web
 
 In Gemfile change following: comment gem jekyll line and uncomment github line
 
+You might have to delete local gem lock file as it may contains old gem that might not be compatibles. 
+
 To run the site locally:
 ```
 bundle exec jekyll serve
+```
+
+Jul 2021: ruby 3.0 is not supported by github pages so downgrade to 2.7
+
+rvm install ruby-2.7
+
+```
+my_env) j@h:~/Documents/code/jaypannu.github.io$ rvm install ruby-2.7
+Searching for binary rubies, this might take some time.
+Found remote file https://rubies.travis-ci.org/ubuntu/20.04/x86_64/ruby-2.7.2.tar.bz2
+Checking requirements for ubuntu.
+Requirements installation successful.
+ruby-2.7.2 - #configure
+ruby-2.7.2 - #download
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+100 21.3M  100 21.3M    0     0   319k      0  0:01:08  0:01:08 --:--:--  476k
+No checksum for downloaded archive, recording checksum in user configuration.
+ruby-2.7.2 - #validate archive
+ruby-2.7.2 - #extract
+ruby-2.7.2 - #validate binary
+ruby-2.7.2 - #setup
+ruby-2.7.2 - #gemset created /home/j/.rvm/gems/ruby-2.7.2@global
+ruby-2.7.2 - #importing gemset /home/j/.rvm/gemsets/global.gems..................................
+ruby-2.7.2 - #generating global wrappers........
+ruby-2.7.2 - #gemset created /home/j/.rvm/gems/ruby-2.7.2
+ruby-2.7.2 - #importing gemsetfile /home/j/.rvm/gemsets/default.gems evaluated to empty gem list
+ruby-2.7.2 - #generating default wrappers........
+(my_env) j@h:~/Documents/code/jaypannu.github.io$ rvm uninstall ruby-3.0.0
+ruby-3.0.0 - #removing rubies/ruby-3.0.0..
+ruby-3.0.0 - #removing default ruby interpreter..............
+(my_env) j@h:~/Documents/code/jaypannu.github.io$ rvm list
+=> ruby-2.7.2 [ x86_64 ]
+
+# Default ruby not set. Try 'rvm alias create default <ruby>'.
+
+# => - current
+# =* - current && default
+#  * - default
+
+(my_env) j@h:~/Documents/code/jaypannu.github.io$ 
 ```

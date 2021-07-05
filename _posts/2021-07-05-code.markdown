@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "VSCode"
+date:   2021-07-05
+categories: ide
+tags: [ubuntu, vscode]
+---
+
+
+Steps to setup code ide
