@@ -50,3 +50,9 @@ And run
 ```
 sudo sysctl -p
 ```
+
+add following to .bashrc
+
+```
+export PROMPT_DIRTRIM=1
+```
